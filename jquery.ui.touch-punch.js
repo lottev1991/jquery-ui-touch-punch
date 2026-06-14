@@ -91,6 +91,8 @@
           clientY:touch.clientY
         });
 
+    simulatedEvent.isTouchPunch = true;
+
     // Dispatch the simulated event to the target element
     event.target.dispatchEvent(simulatedEvent);
   }
